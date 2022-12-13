@@ -47,6 +47,14 @@ function createContent () {
   about.rotation.y = -Math.PI * 2 / 5;
   scene.add(about);
 
+  let projectsFirstPage = new THREE.Mesh(
+    new THREE.PlaneGeometry(4, 3),
+    new THREE.MeshBasicMaterial({map: imgLoader.load('./img/projects-first-page.png'), transparent: true})
+  );
+  projectsFirstPage.position.set(2.5, 0, 3.4);
+  projectsFirstPage.rotation.y = -Math.PI * 2 / 5 * 2;
+  scene.add(projectsFirstPage);
+
   let contacts = new THREE.Mesh(
     new THREE.PlaneGeometry(4, 3),
     new THREE.MeshBasicMaterial({map: imgLoader.load('./img/contacts.png'), transparent: true})
