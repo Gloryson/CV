@@ -17,7 +17,7 @@ window.addEventListener('resize', () => {
 
 window.addEventListener('mousewheel', (event) => {
 	if (canMouseWheel) {
-		direction = event.deltaY / 125;
+		direction = event.deltaY > 0 ? 1 : -1;
 		counterPos -= 1 * direction;
 		stopMovePos = normalizeNum(Math.PI * 2 * counterPos / 5);
 		canMouseWheel = false;
