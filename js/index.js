@@ -25,6 +25,15 @@ window.addEventListener('mousewheel', (event) => {
 });
 
 
+window.addEventListener("keydown", (event) => {
+	switch (event.code) {    
+		case 'KeyG': location.href = 'https://github.com/gloryson'; break;
+		case 'KeyL': location.href = 'https://www.linkedin.com/in/gloryson/'; break;
+		case 'KeyC': location.href = 'https://www.codewars.com/users/W%C5%82adek'; break;
+	} 
+});
+
+
 
 function animate() {
 
