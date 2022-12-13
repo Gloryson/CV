@@ -52,8 +52,16 @@ function createContent () {
     new THREE.MeshBasicMaterial({map: imgLoader.load('./img/projects-first-page.png'), transparent: true})
   );
   projectsFirstPage.position.set(2.5, 0, 3.4);
-  projectsFirstPage.rotation.y = -Math.PI * 2 / 5 * 2;
+  projectsFirstPage.rotation.y = -Math.PI * 4 / 5;
   scene.add(projectsFirstPage);
+
+  let projectsSecondPage = new THREE.Mesh(
+    new THREE.PlaneGeometry(4, 3),
+    new THREE.MeshBasicMaterial({map: imgLoader.load('./img/projects-second-page.png'), transparent: true})
+  );
+  projectsSecondPage.position.set(-2.5, 0, 3.38);
+  projectsSecondPage.rotation.y = -Math.PI * 6 / 5;
+  scene.add(projectsSecondPage);
 
   let contacts = new THREE.Mesh(
     new THREE.PlaneGeometry(4, 3),
