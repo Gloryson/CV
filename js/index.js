@@ -35,7 +35,7 @@ window.addEventListener("keydown", (event) => {
 
 window.addEventListener('load', () => {
 	document.querySelector('.loading-screen').style.display = 'none';
-})
+});
 
 
 
